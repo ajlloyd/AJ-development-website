@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@300&family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin align-center-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+body {
+    font-family:'Quicksand', sans-serif;
+    font-size: 2em;
+    color: white;
+
+    .parallax-wrapper {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 300px;
+
+
+        .outro-screen {
+            height: 100vh;
+            background-color: teal;
+            @include align-center;
+        }
+
+        .parallax-group {
+            position: relative;
+            height: 80vh;
+            transform-style: preserve-3d;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+
+            .parallax-layer {
+                position: absolute;
+                inset: 0;
+                @include align-center;
+                flex-direction: column;
+
+                .top-text-main {
+                    color: #F1E3F3;
+                    font-weight:lighter;
+                    font-size: 4.5rem;
+                    
+                    letter-spacing: 0.2rem;
+                    translate: 0px -75px;
+                }
+
+                .top-text-sub-main {
+                    color: white;
+                    translate: 0px -75px;
+                }
+
+                /*.para-btn {
+                    background-color: #F56476;
+                }*/
+
+
+            }
+
+            .base-layer {
+                //scale calc: 1 + ((Z transform value * -1) / perspective)
+                transform: translateZ(-300px) scale(2.1);
+
+                .base-img {
+                    height: 110vh;
+                    width: 100vw;
+                    filter: brightness(70%);
+                }
+            }
+
+            .mid-layer {
+                //scale calc: 1+ ((Z transform value * -1) / perspective)
+                transform: translateZ(0);
+            }
+
+            .top-layer {
+                //scale calc: 1+ ((Z transform value * -1) / perspective)
+                transform: translateZ(210px) scale(0.3);
+            }
+        }
+
+        .outro-screen {
+            height: 100vh;
+            background-color: white;
+            color: black; 
+            @include align-center;
+        }
+
+        #intro {
+            z-index: 0;
+        }
+        #group1 {
+            z-index: -1;
+        }
+        #group1 > .base-layer {
+            background-color: crimson;
+        }
+        #group2 > .mid-layer {
+            background-color: greenyellow;
+        }
+
+    }
+
+}
