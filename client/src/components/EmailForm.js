@@ -4,6 +4,11 @@ import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import "./EmailForm.scss"
 import EmailModal from './EmailModal';
+require('dotenv').config();
+
+const serviceName = process.env.SERVICE_NAME;
+const templateName = process.env.TEMPLATE_NAME;
+const userId = process.env.USER_ID
 
 const EmailForm = (props) => {
     const [modalShow, setModalShow] = React.useState(false);
@@ -19,10 +24,10 @@ const EmailForm = (props) => {
         
         
         send(
-            'service_smpg8u5',
-            'template_oupknik',
+            serviceName,
+            templateName,
             toSend,
-            'user_A0UoOEsgereLFK0Xb6E53'
+            userId
           )
           .then((response) => {
             console.log('SUCCESS!', response.status, response.text);
