@@ -15,7 +15,7 @@ const EmailModal = (props, body) => {
                 </Modal.Header>
                 <Modal.Body>
                     <h4>Centered Modal</h4>
-                    <p>{props}</p>
+                    <p>poo hole</p>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={props.onHide}>Close</Button>

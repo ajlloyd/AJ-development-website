@@ -4,14 +4,23 @@ import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import "./EmailForm.scss"
 import EmailModal from './EmailModal';
-require('dotenv').config();
 
-const serviceName = process.env.SERVICE_NAME;
-const templateName = process.env.TEMPLATE_NAME;
-const userId = process.env.USER_ID
+
+
+
+//const serviceName = process.env.REACT_APP_SERVICE_NAME;
+//const templateName = process.env.REACT_APP_TEMPLATE_NAME;
+//const userId = process.env.REACT_APP_USER_ID
+
+const serviceName = "service_smpg8u5"
+const templateName = "template_oupknik"
+const userId ="user_A0UoOEsgereLFK0Xb6E53"
 
 const EmailForm = (props) => {
     const [modalShow, setModalShow] = React.useState(false);
+
+
+    
 
     const [toSend, setToSend] = useState({
         from_name: '',
@@ -82,7 +91,7 @@ const EmailForm = (props) => {
                 <Button type="submit" className="para-btn" variant="danger">Submit</Button>
             </form>
 
-            <EmailModal body={toSend.message} show={modalShow} onHide={() => setModalShow(false)}/>
+            <EmailModal show={modalShow} onHide={() => setModalShow(false)}/>
             
         </div>
     )
