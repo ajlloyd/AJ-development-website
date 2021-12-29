@@ -12,8 +12,9 @@ const App = () => {
   return (
 
     <div>
+      <h1 className='test'> Random text to test deployment </h1>
 
-      <div class="parallax-wrapper">
+      {/*<div class="parallax-wrapper">
         <TopNavbar /> 
 
         <ParallaxGroup 
@@ -41,7 +42,7 @@ const App = () => {
         <Contact/>
 
         
-      </div>
+      </div>*/}
 
     </div>
     
