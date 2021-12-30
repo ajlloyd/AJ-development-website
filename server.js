@@ -30,7 +30,9 @@ app.use(express.json());
 
 //helmet
 app.use(
-  helmet()
+  helmet({
+    contentSecurityPolicy: false,
+  })
 );
 
 
