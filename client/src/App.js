@@ -14,7 +14,7 @@ const App = () => {
     <div>
       <h1 className='test'> Random text to test deployment </h1>
 
-      <div class="parallax-wrapper">
+      {/*<div class="parallax-wrapper">
         <TopNavbar /> 
 
         <ParallaxGroup 
@@ -36,13 +36,11 @@ const App = () => {
           topLayerText="bespoke web design"
           topLayerSubText="so you can relax"
           />
-
-        
-
+          
         <Contact/>
 
         
-      </div>
+      </div>*/}
 
     </div>
     
