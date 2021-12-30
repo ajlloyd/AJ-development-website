@@ -9,6 +9,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require('cors');
+const helmet = require("helmet");
 
 
 // HERE ARE THE API ROUTE ENDPOINTS:
@@ -24,6 +25,13 @@ app.use(
   })
 );
 app.use(express.json());
+
+
+
+//helmet
+app.use(
+  helmet()
+);
 
 
 // DB Config
