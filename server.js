@@ -10,7 +10,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require('cors');
 const helmet = require("helmet");
-
+const { expressCspHeader, INLINE, NONE, SELF } = require('express-csp-header');
 
 // HERE ARE THE API ROUTE ENDPOINTS:
 const servicePanel = require("./routes/api/servicePanel");
@@ -34,6 +34,16 @@ app.use(
     contentSecurityPolicy: false,
   })
 );
+
+
+const app = express();
+// other app.use() options ...
+app.use(expressCspHeader({ 
+    policies: { 
+        'default-src': [expressCspHeader.NONE], 
+        'img-src': [expressCspHeader.SELF], 
+    } 
+}));  
 
 
 // DB Config
