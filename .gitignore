@@ -1,3 +1,2 @@
-node_modules 
-.env
-.vscode
+# No modules
+node_modules

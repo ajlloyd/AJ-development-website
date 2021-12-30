@@ -1,23 +1,31 @@
-// Pull in  required dependencies (express, mongoose and bodyParser)
-// Initialize our app using express()
-// Apply the middleware function for bodyparser so we can use it
-// Pull in our MongoURI from our keys.js file and connect to our MongoDB database
-// Set the port for our server to run on and have our app listen on this port
-
-
-const express = require("express");
-const mongoose = require("mongoose");
+// Import npm packages
+const express = require('express');
+const mongoose = require('mongoose');
+const morgan = require('morgan');
 const bodyParser = require("body-parser");
+const path = require('path');
 const cors = require('cors');
-const helmet = require("helmet");
-const { expressCspHeader, INLINE, NONE, SELF } = require('express-csp-header');
 
-// HERE ARE THE API ROUTE ENDPOINTS:
+// Step 1 - PORT define
+const PORT = process.env.PORT || 5000; 
+
+// Step 2 - Api endpoints
 const servicePanel = require("./routes/api/servicePanel");
-//const features = require("./routes/api/features");
 
+// Step 3 - DB configurations
+db = require("./config/keys").mongoURI;
+mongoose.connect(db, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log("MongoDB successfully connected"))
+  .catch(err => console.log(err));
 
-// Bodyparser middleware
+mongoose.connection.on('connected', () => {
+    console.log('Mongoose is connected');
+});
+
+// Step 4 - Data parsing / body parser middleware
 const app = express();
 app.use(
     express.urlencoded({
@@ -25,45 +33,27 @@ app.use(
   })
 );
 app.use(express.json());
+app.use(cors({ credentials: true }));
+
+// Step 3
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
 
 
-
-//helmet
-app.use(
-  helmet({
-    contentSecurityPolicy: false,
-  })
-);
-
-
-const app = express();
-// other app.use() options ...
-app.use(expressCspHeader({ 
-    policies: { 
-        'default-src': [expressCspHeader.NONE], 
-        'img-src': [expressCspHeader.SELF], 
-    } 
-}));  
-
-
-// DB Config
-const db = require("./config/keys").mongoURI;
-
-
-// Connect to MongoDB
-mongoose
-  .connect(
-    db,
-    { useNewUrlParser: true }
-  )
-  .then(() => console.log("MongoDB successfully connected"))
-  .catch(err => console.log(err));
-
-
-// cors
-app.use(cors());
-
-// Routes
+// HTTP request logger
+app.use(morgan('tiny'));
 app.use("/api/services", servicePanel);
-const port = process.env.PORT || 5000;
-app.listen(port, () => console.log(`Server up and running on port ${port} !`));
+
+console.log(PORT);
+app.listen(PORT, console.log(`Server is starting at ${PORT}`));
+
+
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  next();
+  });
