@@ -36,6 +36,7 @@ const About = () => {
             <div className="feat-row-wrap-lrg">
                 <div className="feat-col-lrg" id="Lcol1">
                     <Pane serviceId="1"/>
+                    
                 
 
                 </div>

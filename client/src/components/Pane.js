@@ -1,10 +1,10 @@
 import { Button } from 'react-bootstrap'
-
-
-
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import "./Pane.scss"
+
+const LOCAL_API_URL="http://localhost:5000/api/services/servicepanel/"
+const HEROKU_API_URL="/api/services/servicepanel/"
 
 
 const Pane = (props, {serviceId}) => {
@@ -14,8 +14,11 @@ const Pane = (props, {serviceId}) => {
      const [services, getServices] = useState("");
     
      // 2. DEFINE API ENDPOINT CONSTANT PORTION (ENSURE THIS WORKS WITH PMAN)
-     //const url = "http://ajlloyd-solutions.herokuapp.com/api/services/servicepanel/"
-     const url = "/api/services/servicepanel/"
+     //const url = "http:localhost:5000/api/services/servicepanel/"
+     
+     const url = LOCAL_API_URL || HEROKU_API_URL
+     console.log(url)
+
      
      // 3. SET UP USEEFFECT (PREVENTS CONSTANT LOOP)
      useEffect(() => {
