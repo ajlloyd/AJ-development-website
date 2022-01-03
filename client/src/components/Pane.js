@@ -14,7 +14,8 @@ const Pane = (props, {serviceId}) => {
      const [services, getServices] = useState("");
     
      // 2. DEFINE API ENDPOINT CONSTANT PORTION (ENSURE THIS WORKS WITH PMAN)
-     const url = "http://ajlloyd-solutions.herokuapp.com/api/services/servicepanel/"
+     //const url = "http://ajlloyd-solutions.herokuapp.com/api/services/servicepanel/"
+     const url = "/api/services/servicepanel/"
      
      // 3. SET UP USEEFFECT (PREVENTS CONSTANT LOOP)
      useEffect(() => {
@@ -23,7 +24,8 @@ const Pane = (props, {serviceId}) => {
      
      // 4. FETCH FEATURE FUNCTION CALLED ABOVE (AXIOS GET, THEN, RESPONSE, CATCH ERRORS)
      const fetchMyService = () => {
-       axios.get(url + props.serviceId)
+       axios
+       .get(url + props.serviceId)
        .then((response) => {
          const myService = response.data;
          console.log(myService)
