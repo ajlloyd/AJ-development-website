@@ -14,7 +14,7 @@ const Pane = (props, {serviceId}) => {
      const [services, getServices] = useState("");
     
      // 2. DEFINE API ENDPOINT CONSTANT PORTION (ENSURE THIS WORKS WITH PMAN)
-     const url = "http://localhost:5000/api/services/servicepanel/"
+     const url = "http://ajlloyd-solutions.herokuapp.com/api/services/servicepanel/"
      
      // 3. SET UP USEEFFECT (PREVENTS CONSTANT LOOP)
      useEffect(() => {
