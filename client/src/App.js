@@ -6,6 +6,7 @@ import ParallaxGroup from './components/ParallaxGroup';
 import About from './components/About';
 import TopNavbar from './components/TopNavbar';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -19,9 +20,9 @@ const App = () => {
           id="group1" 
           layer1="base-layer" 
           layer2="mid-layer"
-          baseLayerImg="https://images.pexels.com/photos/695228/pexels-photo-695228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
-          topLayerText="bespoke web development"
-          topLayerSubText="so you can relax!!!"
+          baseLayerImg="https://logosandgames.files.wordpress.com/2015/08/windows95.png"
+          topLayerText="Aaron Lloyd Development"
+          topLayerSubText="Expert web designer and data science developer"
           PageType="main"/>
 
         <About />
@@ -36,6 +37,7 @@ const App = () => {
           />
           
         <Contact/>
+        <Footer />
 
         
       </div>

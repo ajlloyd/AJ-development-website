@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@300&family=Roboto+Condensed&display=swap');
+@import "variables";
+
 
 * {
     margin: 0;
@@ -20,6 +22,8 @@
 }
 
 
+
+
 body {
     font-family:'Quicksand', sans-serif;
     font-size: 2em;
@@ -34,7 +38,7 @@ body {
         overflow-x: hidden;
         overflow-y: auto;
         perspective: 300px;
-
+        
 
         .outro-screen {
             height: 100vh;
@@ -44,11 +48,12 @@ body {
 
         .parallax-group {
             position: relative;
-            height: 80vh;
+            height: 60vh;
             transform-style: preserve-3d;
-            color: white;
+            color: $primaryTextColor;
             font-size: 2.5em;
             font-weight: bold;
+            
 
             .parallax-layer {
                 position: absolute;
@@ -57,22 +62,21 @@ body {
                 flex-direction: column;
 
                 .top-text-main {
-                    color: #F1E3F3;
+                    color: $primaryTextColor;
                     font-weight:lighter;
                     font-size: 4.5rem;
-                    
+                    font-family: $titleScreenFont;
+                    text-align: center;
                     letter-spacing: 0.2rem;
                     translate: 0px -75px;
+                    position: relative;
+                    width: 7em;
                 }
-
                 .top-text-sub-main {
-                    color: white;
+                    color: $primaryTextColor;
                     translate: 0px -75px;
+                    font-family: $titleScreenFont;
                 }
-
-                /*.para-btn {
-                    background-color: #F56476;
-                }*/
 
 
             }
@@ -80,28 +84,33 @@ body {
             .base-layer {
                 //scale calc: 1 + ((Z transform value * -1) / perspective)
                 transform: translateZ(-300px) scale(2.1);
+                //background-color: black;
+
+                .pc-screen {
+                    width:100px;
+                    height: 100px;
+                    background-color: blue;
+                }
 
                 .base-img {
-                    height: 110vh;
-                    width: 100vw;
+                    height: 10vh;
+                    width: 5vw;
                     filter: brightness(70%);
+                    position: relative;
+                    bottom: 0px;
                 }
             }
-
             .mid-layer {
-                //scale calc: 1+ ((Z transform value * -1) / perspective)
                 transform: translateZ(0);
             }
-
             .top-layer {
-                //scale calc: 1+ ((Z transform value * -1) / perspective)
                 transform: translateZ(210px) scale(0.3);
             }
         }
 
         .outro-screen {
             height: 100vh;
-            background-color: white;
+            background-color: $primaryTextColor;
             color: black; 
             @include align-center;
         }
@@ -111,12 +120,6 @@ body {
         }
         #group1 {
             z-index: -1;
-        }
-        #group1 > .base-layer {
-            background-color: crimson;
-        }
-        #group2 > .mid-layer {
-            background-color: greenyellow;
         }
 
     }

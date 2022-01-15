@@ -1,9 +1,10 @@
+@import "../variables.scss";
+
 @mixin align-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .featured-wrapper {
     @include align-center;
     background-color: #E7E5E5;
@@ -11,69 +12,67 @@
     padding-left: 12%;
     padding-right: 12%;
     padding-bottom: 2%;
+    font-family: $Montserrat;
+    font-weight: bolder;
 
+    
     .solid {
         color: black;
         width: 110%;
         margin: 10px;
         margin-bottom: 30px;
-
       }
     .about-title {
         margin: 10px;
         margin-bottom: 0px;
         margin-top: 2%;
+        bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .my-picture{
+            width: 200px;
+            img{
+                width: 200px;
+                align-items: center;
+            }
+        }
+
         .title-text {
             color: black;
             font-size: 25px;
             margin-bottom: 0px;
+            text-align: center;
+
+            
+        }
+        
+
+        .desc-wrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .desc-single{
+                color: black;
+                display: flex;
+                
+                
+                
+
+            }
         }
     }
-
-    /* transplant ... -----------------------------------------*/
-
-    .featured-pane-lrg {
-        background-color: blueviolet;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        .pane-lrg {
-            width: 100%;
-            flex-grow: 1;
-        }
-    }
-
+    
     /* large pane in featured -----------------------------------------*/
     .feat-row-wrap-lrg {
         display: flex;
         justify-content: space-between;
-        width: 100%;
         .feat-col-lrg {
-            width: 100%;
             background-color: whitesmoke;
             padding:0%;
-            flex-grow: 1;
-            max-width: 20em;
-            min-width: 2em;
+            
             margin: 10px 10px; 
-        }
-    }
-
-    /* small pane in featured ----------------------------------*/
-    .feat-row-wrap-sml {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-
-        .feat-col-sml {
-            width: 100%;
-            background-color: whitesmoke;
-            padding:0%;
-            min-width: 1.5em;
-            max-width: 15em;
-            margin: 10px 10px;
-            
-            
         }
     }
     .about-text p{
@@ -83,4 +82,9 @@
         @include align-center;
         justify-content: space-between;
     }
+}
+
+
+#slk-ani{
+    font-size: 1.5em;
 }

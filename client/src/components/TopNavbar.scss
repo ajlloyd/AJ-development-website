@@ -1,3 +1,5 @@
+@import "../variables";
+
 @mixin align-center {
     display: flex;
     justify-content: center;
@@ -9,45 +11,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     width: 100%;
     z-index: 4;
     transition-timing-function: ease-in;
     transition: 0.5s;
-
-    // Navbar left (title)
-    .navbar-title {
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
-
-        // Title text scrolled (default)
-        .nav-title-text {
-            font-size: 1.2rem;
-            text-align: left;
-            margin-left: 10px;
-            margin: 0;
-            color: #09090B;   
-        }
-
-        // Title text colour unscrolled
-        .nav-text-color {
-            color:white;
-        }
-
-        // Title icon scrolled (default)
-        .nav-title-icon{
-            color: #09090B;
-            margin-right: 10px;
-        }
-
-        // Title icon colour unscrolled
-        .nav-icon-color {
-            color:white;
-        }
-    }
 
     // Navbar right (menu)
     .navbar-navigation {
@@ -62,46 +31,49 @@
 
             // Navbar Item in Menu:
             .navbar-item {
-                font-size: 1.1rem;
-                margin-right: 20px;
-                margin-left: 20px;
+                font-size: $dynamicFontSmall;
+                font-family: $ubuntuMonoFont;
+                text-align: center;
+                width: 90px;
+                //margin-right: 20px;
+                //margin-left: 20px;
                 margin: 20px;
                 text-decoration: none;
             }
         }
         
-        // Navbar menu text colour (unscrolled)
-        .nav-item-wrap a {
-            color: black;
-        }
-
-        // Navbar menu text hover colour (unscrolled)
-        .nav-item-wrap a:hover {
-            color: #F56476;
-            text-shadow: 0.5px 0px 0px #F56476, -0.5px 0px 0px #F56476;
-        }
-
         // Navbar menu text colour (scrolled)
+        .nav-item-wrap a {
+            color: white;
+            &:hover{
+                color: #F56476;
+                text-shadow: 0.2px 0px 0px #F56476, -0.2px 0px 0px #F56476;
+
+            }
+        }
+
+
+        // Navbar menu text colour (unscrolled)
         .nav-item-txt-color a {
             color: white;
-        }
+            &:hover{
+                color: #F56476;
+                text-shadow: 0.2px 0px 0px #F56476, -0.2px 0px 0px #F56476;
 
-        // Navbar menu text hover colour (scrolled)
-        .nav-item-txt-color a:hover {
-            color: #F56476;
-            text-shadow: 0.7px 0px 0px #F56476, -0.7px 0px 0px #F56476;
+            }
         }
     }
 }
 
-// navbar color when hovered over (when disappeared)
-/*.navbar-wrapper-hov :hover {
-    background-color: rgba($color: #000000, $alpha: 0.3);
-}*/
 
 // navbar background
 .nav-color {
-    background-color:#1F1F1F;
+    background-color:#1f1f1f95;
+}
+
+.navbar-transp {
+    background-color:#1f1f1f20;
+
 }
 
 

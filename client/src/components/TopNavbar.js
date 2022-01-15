@@ -36,15 +36,15 @@ const TopNavbar = () => {
         // && logical AND
         
         
-        <div className= {`navbar-wrapper ${showNav && 'nav-color'} ${!showNav && "navbar-wrapper-hov"}`} id="navbar">
+        <div className= {`navbar-wrapper ${showNav && 'nav-color'} ${!showNav && "navbar-transp"}`} id="navbar">
             
 
 
 
             <div className="navbar-navigation">
                 <div className="navbar-title">
-                    <h3 className={`nav-title-icon ${showNav && 'nav-icon-color'}`}><BsTerminal/></h3>
-                    <h3 className={`nav-title-text ${showNav && 'nav-text-color'}`}> A.J. Lloyd - Web Solutions </h3>
+                    {/*<h3 className={`nav-title-icon ${showNav && 'nav-icon-color'}`}><BsTerminal/></h3>
+                    <h3 className={`nav-title-text ${showNav && 'nav-text-color'}`}> A.J. Lloyd Solutions </h3>*/}
                     {/*{showNav ? "nav-text-color" : "false"}*/}
                 </div>
                 <div className={`nav-item-wrap ${showNav && 'nav-item-txt-color'}`}>

@@ -1,0 +1,17 @@
+@import "../variables";
+
+
+.p, p {
+	font-size: $dynamicFontSmall;
+	color: black;
+}
+
+.h3, h3{
+    font-size: $dynamicFontSmall;
+	color: black;
+
+}
+
+.accordion-body{
+	width:20vw;
+}

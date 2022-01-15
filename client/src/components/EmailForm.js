@@ -60,9 +60,9 @@ const EmailForm = (props) => {
                 <div className='form-input'>
                     <h3>Your Name:</h3>
                     <input
+                    className='input-field'
                     type='text'
                     name='from_name'
-                    placeholder='Your Name'
                     value={toSend.from_name}
                     onChange={handleChange}/>
                 </div>
@@ -70,9 +70,9 @@ const EmailForm = (props) => {
                 <div className='form-input'>
                     <h3>Your Email:</h3>
                     <input
+                    className='input-field'
                     type='text'
                     name='reply_to'
-                    placeholder='Your email'
                     value={toSend.reply_to}
                     onChange={handleChange}/>
                 </div>
@@ -80,15 +80,20 @@ const EmailForm = (props) => {
                 <div className='form-input'>
                     <h3>Your Message:</h3>
                     <textarea 
+                    className='input-field'
                     name='message'
                     rows = "5" 
                     cols = "60"
                     type='text'
                     value={toSend.message}
                     onChange={handleChange}
-                    placeholder='Your message'/>
+                    />
+                    
                 </div>
-                <Button type="submit" className="para-btn" variant="danger">Submit</Button>
+                <div className='form-input'>
+                    <Button type="submit" className="para-btn" variant="danger">Submit</Button>
+                </div>
+                
             </form>
 
             <EmailModal show={modalShow} onHide={() => setModalShow(false)}/>

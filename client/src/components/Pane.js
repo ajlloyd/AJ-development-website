@@ -1,9 +1,10 @@
-import { Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap';
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
-import "./Pane.scss"
+import "./Pane.scss";
 
-const LOCAL_API_URL="http://localhost:5000/api/services/servicepanel/"
+
+//const LOCAL_API_URL="http://localhost:5000/api/services/servicepanel/"
 const HEROKU_API_URL="/api/services/servicepanel/"
 
 
@@ -16,7 +17,7 @@ const Pane = (props, {serviceId}) => {
      // 2. DEFINE API ENDPOINT CONSTANT PORTION (ENSURE THIS WORKS WITH PMAN)
      //const url = "http:localhost:5000/api/services/servicepanel/"
      
-     const url = LOCAL_API_URL || HEROKU_API_URL
+     const url = HEROKU_API_URL
      console.log(url)
 
      
@@ -57,13 +58,18 @@ const Pane = (props, {serviceId}) => {
     };
     return(
 
+      <React.Fragment>
+        <div className="single-pane">
+          <img className="pane-image" src={services.img} alt="vvv"/>
+          <h2 className='pane-sub'>{services.subheading}</h2>
+          <Button className="pane-btn" variant="outline-light"> Enquire </Button>
+        </div>
 
-      <div className="single-pane">
-        <img className="pane-image" src={services.img} alt="vvv"/>
-        <h2 className='pane-sub'>{services.subheading}</h2>
-        {/*<h4 className='pane-desc'>{services.description}</h4>*/}
-        <Button className="pane-btn" variant="outline-light"> Enquire </Button>
-      </div>
+
+      </React.Fragment>
+
+
+      
       
       
     )

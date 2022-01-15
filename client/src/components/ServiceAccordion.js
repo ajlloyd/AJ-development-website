@@ -1,25 +1,20 @@
-import React from 'react'
-import { Accordion, Card } from 'react-bootstrap'
-import { BsChevronDown } from 'react-icons/bs';
-import "./ServiceAccordion.scss"
+import React from 'react';
+import { Accordion, Card, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./ServiceAccordion.scss";
+import CustomAccordionBody from "./CustomAccordionBody"
 
-const ServiceAccordion = () => {
+const ServiceAccordion = ({body1, body2}) => {
     return (
         <div>
-
-            <Accordion className="pane-acc">
-                <Card>
-                <Accordion.Toggle className="pane-acc-header" as={Card.Header} eventKey="0">
-                    <a>Overview</a> 
-                    <div><BsChevronDown /></div>
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="0">
-                    <Card.Body>This is first tab body sdfgdfgfdgsdgsdfgsdfgdsfgdf sdfg sdfg sdfg  sdfg sdfg dsfgdsfgsd gsdfgsdf gdsfgsdfg </Card.Body>
-                </Accordion.Collapse>
-                </Card>
-                
-            </Accordion>
-            
+            <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header>Details</Accordion.Header>
+                    <Accordion.Body>
+                        <CustomAccordionBody />
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>    
         </div>
     )
 }
