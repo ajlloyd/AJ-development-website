@@ -62,7 +62,7 @@ const Pane = (props, {serviceId}) => {
         <div className="single-pane">
           <img className="pane-image" src={services.img} alt="vvv"/>
           <h2 className='pane-sub'>{services.subheading}</h2>
-          <Button className="pane-btn" variant="outline-light"> Enquire </Button>
+          
         </div>
 
 

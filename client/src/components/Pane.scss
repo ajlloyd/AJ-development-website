@@ -24,7 +24,7 @@
         font-size:$dynamicFontLarge;
         font-family: $ubuntuFont;
         &:hover{
-            color: #F56476;
+            color: $secondaryTextColor;
             font-size: calc(16px + 1.0vw);
             cursor: pointer;
         }
@@ -37,12 +37,6 @@
         bottom: 3em;
     }
 
-    .pane-btn{
-        position: absolute;
-        bottom: 8px;
-        left: 16px;
-        width: calc(45px + 4vw);
-        font-size: $dynamicFontSmall;
-    }
 
 }
+

@@ -1,19 +1,42 @@
+@import "../variables";
+
 @mixin align-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+body {  
+    //background: linear-gradient(45deg, #57003f 0%,#f57453 100%);
+    background: linear-gradient(-45deg, #F46036, #57003f, #f57453);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; 
+    font-family: "Ubuntu";
+}
+  
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .contact-wrapper {
     @include align-center;
-    background-color: #E7E5E5;
+    
     flex-direction: column;
     padding-left: 12%;
     padding-right: 12%;
     padding-bottom: 2%;
 
     .solid {
-        color: black;
+        color: $secondaryWhite;
         width: 110%;
         margin: 10px;
         margin-bottom: 30px;
@@ -25,7 +48,7 @@
         margin-top: 2%;
 
         .title-text {
-            color: black;
+            color: $secondaryWhite;
             font-size: 25px;
             margin-bottom: 0px;
         }

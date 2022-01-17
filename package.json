@@ -24,6 +24,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.7.9",
     "morgan": "^1.9.1",
-    "react-bootstrap": "^2.1.0"
+    "react-bootstrap": "^2.1.0",
+    "react-social-icons": "^5.7.0"
   }
 }

@@ -15,3 +15,12 @@
 .accordion-body{
 	width:20vw;
 }
+
+.accordion-button:focus {
+	z-index: 3;
+	border-color: #86b7fe;
+	outline: 0;
+	box-shadow: 0 0 0 .25rem #39A9F950;
+}
+
+

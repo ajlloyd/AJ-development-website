@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&family=Open+Sans:wght@300&display=swap');
 
 $dynamicFontLarge: calc(15px + 1.0vw);
-$dynamicFontMedium: calc(100px + 1.0vw);
+$dynamicFontMedium: calc(10px + 1.0vw);
 $dynamicFontSmall: calc(10px + 0.4vw);
 //$dynamicFontPara:
 
@@ -17,10 +17,16 @@ $secondaryTextColor: #F56476;
 $titleScreenFont: 'Josefin Sans', sans-serif;
 $ubuntuMonoFont: 'Ubuntu Mono';
 $ubuntuFont: "Ubuntu";
-
-
-
 $Montserrat: 'Open Sans', sans-serif;
 
-/*$navBarFont:
-$websiteBodyFont:*/
+//Colours:
+//Purple:
+$primaryPurple: #380428;
+//Firey Rose:
+$primaryRose: #F56476;
+//Blue Jeans:
+$secondaryBlue: #39A9F9;
+//Eerie Black:
+$secondaryBlack: #1F1F1F;
+//Platinum:
+$secondaryWhite: #E7E5E5;

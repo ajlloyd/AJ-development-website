@@ -1,12 +1,26 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import "./About.scss";
 import Pane from "./Pane";
 import ServiceAccordion from "./ServiceAccordion";
+var { SocialIcon } = require('react-social-icons');
+
 
 
 
 
 const About = () => {
+
+    function scrollTo() {
+        const para = document.querySelector(".parallax-wrapper");
+        // For Chrome, Firefox, IE and Opera
+        para.scrollTo({
+            top: para.scrollHeight,
+            left: 0,
+            behavior: 'smooth'
+          });
+      } 
+
     return (
 
         <div class="featured-wrapper">
@@ -21,7 +35,14 @@ const About = () => {
                 <div className='my-picture'>
                     <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Heather&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Pale'/>
                 </div>
-                <h1 className="title-text">React and Python Developer</h1>
+                <h1 className="title-text">UK based Developer specialising in Web Development and Data Science</h1>
+                <h3 className="title-text" id="tt-sml">HTML // CSS // Python // React // JavaScript</h3>
+                <div className='social-banner'>
+                    <SocialIcon className="social-icon" url="https://linkedin.com/in/aaron-lloyd-300a621b3/" />
+                    <SocialIcon className="social-icon" url="https://github.com/ajlloyd" />
+                    <SocialIcon className="social-icon" url="mailto:ajlloyd.dev@gmail.com" />
+                </div>
+                <Button className="contact-btn" variant="outline-dark" onClick={() => scrollTo()}> Contact Me </Button>
                 
                 <div className='desc-wrap'>
                     {/*<div className='desc-single'>
@@ -40,7 +61,7 @@ const About = () => {
 
 
             
-            <hr class="solid"/>
+            {/*<hr class="solid"/>*/}
 
 
             {/*-------------------------------*/}

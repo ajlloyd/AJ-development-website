@@ -1,16 +1,31 @@
+@import "../variables";
+
 .form-wrap{
 
+    display: flex;
+    justify-content: center;
     .email-form{
         display: flex;
         flex-direction: column;
+        width: 80%;
         .form-input{
             margin: 10px;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            
+            Button{
+                width: 40%;
+                align-self: center;
+                background-color: $secondaryBlue;
+                &:hover{
+                    background-color: #0676C6;
+                }
+            }
+            
+
             h3 {
                 font-size: 0.6em;
-                color: black;
+                color: $secondaryWhite;
                 margin-bottom: 10px;
             }
 
@@ -20,7 +35,7 @@
                 font-size: inherit;
                 line-height: inherit;
                 font-size: 0.6em;
-                width: 80%;
+                width: 100%;
                 align-items: center;
 
 

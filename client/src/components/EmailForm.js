@@ -91,7 +91,7 @@ const EmailForm = (props) => {
                     
                 </div>
                 <div className='form-input'>
-                    <Button type="submit" className="para-btn" variant="danger">Submit</Button>
+                    <Button type="submit" className="para-btn" variant="primary">Submit</Button>
                 </div>
                 
             </form>
