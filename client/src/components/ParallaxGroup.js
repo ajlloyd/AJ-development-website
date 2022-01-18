@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import Test from './Test'
+
 
 
 
@@ -11,8 +11,12 @@ const ParallaxGroup = ({id, layer1, layer2, baseLayerImg, topLayerText, topLayer
             <div className="parallax-group" id={id}>
                 <div className={"parallax-layer" + " " + layer1}>
                     {/*<img className="base-img" src={baseLayerImg}/>*/}
-                    {/*<div className='pc-screen'></div>*/}
-                    <Test />
+                    <div className='text-and-cursor'>
+                        <div class="typewriter">
+                            <h1>Your new project awaits.</h1>
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 <div class={"parallax-layer" + " " + layer2}>

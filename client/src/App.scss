@@ -61,6 +61,63 @@ body {
                 @include align-center;
                 flex-direction: column;
 
+                .text-and-cursor{
+                    display: flex;
+                    position: relative;
+                    top: 1em;                
+
+                    .bottom-text{
+                        color: $primaryTextColor;
+                        font-weight:lighter;
+                        font-family: $ubuntuMonoFont;
+                        letter-spacing: 0.2rem;
+                        font-size: 20px;
+
+                    }
+
+                    #terminal__prompt--cursor {  
+                        display: block;  
+                        height: 17px;  
+                        width: 8px;  
+                        margin-left: 9px;  
+                        animation: blink 1200ms linear infinite;
+                    }
+
+                    /* DEMO-SPECIFIC STYLES */
+                    .typewriter h1 {
+                        color: $primaryTextColor;
+                        font-family: $ubuntuMonoFont;
+                        font-size: 20px;
+                        font-weight: lighter;
+                        overflow: hidden; /* Ensures the content is not revealed until the animation */
+                        border-right: .55em solid $primaryTextColor; /* The typwriter cursor */
+                        white-space: nowrap; /* Keeps the content on a single line */
+                        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+                        letter-spacing: .15em; /* Adjust as needed */
+                        animation: 
+                        typing 4s steps(30, end),
+                        blink-caret 1s step-end infinite;
+                    }
+                    
+                    /* The typing effect */
+                    @keyframes typing {
+                        from { width: 0 }
+                        to { width: 100% }
+                    }
+                    
+                    /* The typewriter cursor effect */
+                    @keyframes blink-caret {
+                        from, to { border-color: transparent }
+                        50% { border-color: $primaryTextColor }
+                    }
+
+
+
+
+
+
+                }
+
                 .top-text-main {
                     color: $primaryTextColor;
                     font-weight:lighter;
@@ -85,12 +142,6 @@ body {
                 //scale calc: 1 + ((Z transform value * -1) / perspective)
                 transform: translateZ(-300px) scale(2.1);
                 //background-color: black;
-
-                .pc-screen {
-                    width:100px;
-                    height: 100px;
-                    background-color: blue;
-                }
 
                 .base-img {
                     height: 10vh;

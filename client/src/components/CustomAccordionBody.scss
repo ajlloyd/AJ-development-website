@@ -6,9 +6,21 @@
 	color: black;
 }
 
-.h3, h3{
+.h3, h3 {
     font-size: $dynamicFontSmall;
 	color: black;
+	font-family: $Montserrat;
+	line-height: 25px;
+}
+
+.li, li {
+	font-size: $dynamicFontSmall;
+	color: black;
+	font-family: $Montserrat;
+	font-weight: 200;
+	position: relative;
+	left: 20px;
+	line-height: 25px;	
 
 }
 

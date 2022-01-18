@@ -20,8 +20,8 @@ const EmailModal = (props, body) => {
                     <CloseButton  onClick={props.onHide}/>
                 </Modal.Header>
                 <Modal.Body>
-                    <h3 style={styles1}>Success 🥳 !</h3>
-                    <h5 style={styles1}>Thank you for submitting your request - I will respond as soon as possible.</h5>
+                    <h2 style={styles1}>Success 🥳 !</h2>
+                    <h3 style={styles1}>Thank you for submitting your request - I will respond as soon as possible.</h3>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={props.onHide}>Close</Button>

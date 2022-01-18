@@ -9,7 +9,7 @@ var { SocialIcon } = require('react-social-icons');
 
 
 
-const About = () => {
+const About = (props) => {
 
     function scrollTo() {
         const para = document.querySelector(".parallax-wrapper");
@@ -24,10 +24,6 @@ const About = () => {
     return (
 
         <div class="featured-wrapper">
-
-            {/*<div className='my-picture'>
-                <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Heather&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Pale'/>
-            </div>*/}
 
 
             <div className="about-title">
@@ -69,17 +65,17 @@ const About = () => {
             <div className="feat-row-wrap-lrg">
                 <div className="feat-col-lrg" id="Lcol1">
                     <Pane serviceId="1"/>
-                    <ServiceAccordion />
+                    <ServiceAccordion textNumber="1" />
                 </div>
                 
                 <div className="feat-col-lrg" id="Lcol2">
                     <Pane serviceId="2"/>
-                    <ServiceAccordion/>
+                    <ServiceAccordion textNumber="2"/>
                 </div>
 
                 <div className="feat-col-lrg" id="Lcol3">
                     <Pane serviceId="3"/>
-                    <ServiceAccordion/>
+                    <ServiceAccordion textNumber="3" />
                 </div>
 
                 
