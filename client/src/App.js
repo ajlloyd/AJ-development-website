@@ -21,7 +21,7 @@ const App = () => {
           layer1="base-layer" 
           layer2="mid-layer"
           topLayerText="Aaron Lloyd Development"
-          topLayerSubText="Expert web designer and data science developer"
+          topLayerSubText="Expert Web Designer and Data Science Developer"
           PageType="main"/>
 
         <About />
