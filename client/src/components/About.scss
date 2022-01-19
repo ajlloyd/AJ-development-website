@@ -90,7 +90,13 @@
         .feat-col-lrg {
             background-color: whitesmoke;
             padding:0%;
-            margin: 10px 10px; 
+            margin: 10px 10px;
+            position: relative;
+            &:hover{
+            
+                bottom: 5px;
+                box-shadow: 0 0 20px rgba(33,33,33,.2); 
+            }
         }
     }
 
