@@ -40,7 +40,7 @@ const CustomAccordionBody = (props, {textNumber}) => {
             return(
                 <div>
                     <h3>Diverse Python programming assistance / project work.</h3>
-                    <h3>I have previously worked on projects for:</h3>
+                    <h3>I have previously worked on projects which have included:</h3>
                     <li>Data Science (Numpy, SKLearn, Pandas etc.)</li>
                     <li>Machine Learning (TensorFlow, Keras) </li>
                     <li>Web Development (Flask)</li>

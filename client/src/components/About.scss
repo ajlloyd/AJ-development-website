@@ -85,13 +85,42 @@
     .feat-row-wrap-lrg {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
+          
         .feat-col-lrg {
             background-color: whitesmoke;
             padding:0%;
-            
             margin: 10px 10px; 
         }
     }
+
+    @media screen and (max-width: 800px) {
+        .feat-row-wrap-lrg {
+          flex-direction: column;
+        }
+        .single-pane{
+            position: relative;
+            overflow: hidden;
+            width: 60vw;
+            height: 40vw;
+            min-width: 200px;
+            min-height: 300px;
+            .pane-image{
+                width: 60vw;
+                min-height: 305px;
+                min-width: 405px;
+                position: relative; 
+                filter: brightness(70%);      
+            }
+        }
+
+        .accordion-body{
+            width: 60vw;
+        }
+    }
+
+
+
     .about-text p{
         font-size: 0.5em;
     }

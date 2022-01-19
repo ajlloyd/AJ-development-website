@@ -24,7 +24,7 @@
             
 
             h3 {
-                font-size: 0.6em;
+                font-size: $dynamicFontSmall;
                 color: $secondaryWhite;
                 margin-bottom: 10px;
             }
@@ -34,7 +34,7 @@
                 font-family: inherit;
                 font-size: inherit;
                 line-height: inherit;
-                font-size: 0.6em;
+                font-size: $dynamicFontSmall;
                 width: 100%;
                 align-items: center;
 
