@@ -6,7 +6,7 @@ import CustomAccordionBody from "./CustomAccordionBody"
 const ServiceAccordion = (props, { textNumber }) => {
     return (
         <div>
-            <Accordion defaultActiveKey="0">
+            <Accordion defaultActiveKey="1">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Details</Accordion.Header>
                     <Accordion.Body>
