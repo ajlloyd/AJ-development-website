@@ -13,8 +13,8 @@ const CustomAccordionBody = (props, {textNumber}) => {
 
                 <div>
                     <div className='body-text'>
-                        <h3>Professional Front-End design which can be customised to your business or personal needs.</h3>
-                        <h3>For Front End Web Design I use:</h3>
+                        <h3>Professional design which can be customised to your business or personal needs.</h3>
+                        <h3>Tools for Front End Design:</h3>
                         
                     </div>
                     
@@ -67,7 +67,7 @@ const CustomAccordionBody = (props, {textNumber}) => {
                 <div>
                     <div className='body-text'>
                         <h3>Full-Stack React App development using a MERN stack (Mongo, Express, React, Node).</h3>
-                        <h3>For React Apps I use:</h3>
+                        <h3>Tools for React Apps:</h3>
 
                     </div>
                     
@@ -110,9 +110,13 @@ const CustomAccordionBody = (props, {textNumber}) => {
         case "3":
             return(
                 <div>
+                    <div className='body-text'>
+                        <h3>Diverse Python programming assistance / project work.</h3>
+                        <h3>I have previously worked on projects which have included:</h3>
+
+                    </div>
                     
-                    <h3>Diverse Python programming assistance / project work.</h3>
-                    <h3>I have previously worked on projects which have included:</h3>
+                    
 
                     
                     
