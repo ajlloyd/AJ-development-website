@@ -29,9 +29,15 @@ body {
     font-size: 2em;
     color: white;
 
-    .test{
-        color: black;
-    }
+    ::-moz-selection { /* Code for Firefox */
+        color: red;
+        background: yellow;
+      }
+      
+      ::selection {
+        color: red;
+        background: yellow;
+      }
 
     .parallax-wrapper {
         height: 100vh;
