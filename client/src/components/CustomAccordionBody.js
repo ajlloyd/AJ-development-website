@@ -1,6 +1,6 @@
 import React from 'react'
 import "./CustomAccordionBody.scss" 
-import {SiJavascript, SiReact, SiHtml5, SiCss3, SiBootstrap, SiNodedotjs, SiMongodb, SiExpress, SiPostman, SiPython} from "react-icons/si"
+import {SiJavascript, SiReact, SiHtml5, SiCss3, SiBootstrap, SiNodedotjs, SiMongodb, SiExpress, SiPostman, SiPython, SiKeras, SiTensorflow, SiFlask, SiNumpy, SiPandas} from "react-icons/si"
 
 
 const CustomAccordionBody = (props, {textNumber}) => {
@@ -113,11 +113,44 @@ const CustomAccordionBody = (props, {textNumber}) => {
                     
                     <h3>Diverse Python programming assistance / project work.</h3>
                     <h3>I have previously worked on projects which have included:</h3>
-                    <li>Data Science (Numpy, SKLearn, Pandas etc.)</li>
-                    <li>Machine Learning (TensorFlow, Keras) </li>
-                    <li>Web Development (Flask)</li>
-                    <li>Data Processing</li>
-                    <li>API development </li>
+
+                    
+                    
+                    <div className='icon-wrapper'>
+
+                        <div className='single-icon-container'>
+                            <h1 style={{color:"red"}}><SiKeras/></h1>
+                            <h3>Keras</h3>
+                        </div>
+
+                        <div className='single-icon-container'>
+                            <h1 style={{color:"#000000"}}><SiFlask/></h1>
+                            <h3>Flask</h3>
+                        </div>
+
+                        
+                        
+                        <div className='single-icon-container'>
+                            <h1 style={{color:"#94daff"}}><SiNumpy/></h1>
+                            <h3>NumPy</h3>
+                        </div>
+
+                        <div className='single-icon-container'>
+                            <h1 style={{color:"#000000"}}><SiPandas/></h1>
+                            <h3>Pandas</h3>
+                        </div>
+
+
+                        <div className='single-icon-container'>
+                            <h1 style={{color:"#0013a6"}}><SiPython/></h1>
+                            <h3>Python</h3>
+                        </div>
+                        <div className='single-icon-container'>
+                            <h1 style={{color:"#fc7303"}}><SiTensorflow/></h1>
+                            <h3>TensorFlow</h3>
+                        </div>
+                    </div>
+
                 </div>
             )
             break;
