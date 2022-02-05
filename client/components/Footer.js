@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Footer.scss"
+import styles from "../styles/Footer.module.scss"
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 
 const Footer = () => {
@@ -14,16 +14,16 @@ const Footer = () => {
 
 
     return (
-        <div class="footer-container">
-            <div class="contact">
+        <div className={styles.footerContainer}>
+            <div className={styles.contactEmail}>
                 <a href="mailto:ajlloyd.dev@gmail.com" title="Email me" rel="me" target="_blank">ajlloyd.dev@gmail.com</a>
             </div>
 
-            <div class="info">
+            <div className={styles.copyright}>
                 <p>© 2022 Aaron Lloyd</p>
             </div>
 
-            <button type="button" class="to-top" onClick={scrollToTop}><BsFillArrowUpCircleFill/></button>
+            <button type="button" className={styles.toTopBtn} onClick={scrollToTop}><BsFillArrowUpCircleFill/></button>
         </div>
     )
 }

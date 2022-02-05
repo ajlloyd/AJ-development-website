@@ -1,23 +1,23 @@
-@import "../variables";
+@import "./variables.module.scss";
 
-.footer-container{
+.footerContainer{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .contact a{
+    .contactEmail a{
         color: $secondaryWhite;
         font-size: $dynamicFontMedium;
         text-decoration: none;
     }
 
-    .info p{
+    .copyright p{
         color: $secondaryWhite;
         font-size: $dynamicFontSmall;
     }
 
-    .to-top{
+    .toTopBtn{
         background-color: transparent;
         border: none;
         cursor: pointer;

@@ -1,0 +1,78 @@
+@import "./variables.module.scss";
+
+
+
+
+.bodyWrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.bodyText{
+	display: flex;
+	flex-direction: column;
+	height: calc(20px + 8vw);
+	margin: 0.5em;
+	
+	h3{
+		font-size: $dynamicFontXSmall
+	}
+
+}
+
+.iconContainer{
+	display: flex;
+	//flex-wrap: wrap;
+	flex-direction: row;
+	//align-items: center;
+	justify-content: center;
+	width: 15vw;
+	height: 400px;
+
+	.iconRow{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	
+	
+
+		.icon{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			overflow: hidden;
+			width: 85px;
+			height: 85px;
+			background-color: #292929;
+			//border: solid 1px;
+			color: rgb(70, 70, 70);
+			margin: 1vw;
+			border-radius: 10px;
+			padding: 5px;
+			
+			.iconText{
+				
+				font-size: $dynamicFontXXSmall;
+				position: relative;
+			}
+			
+		}
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.iconContainer{
+		flex-direction: column;
+		height: 650px;
+
+		.icon{
+			width: 185px;
+			height: 85px;
+		}
+	}
+}
+
+

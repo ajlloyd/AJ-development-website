@@ -5,10 +5,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&family=Open+Sans:wght@300&display=swap');
 
-$dynamicFontLarge: calc(15px + 1.0vw);
-$dynamicFontMedium: calc(10px + 1.0vw);
-$dynamicFontSmall: calc(10px + 0.4vw);
-//$dynamicFontPara:
+
+@mixin align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$dynamicFontXLarge: calc(50px + 0.5vw);
+$dynamicFontLarge: calc(20px + 1vw);
+$dynamicFontMedium: calc(15px + 1vw);
+$dynamicFontSmall: calc(12px + 0.5vw);
+$dynamicFontXSmall: calc(10px + 0.5vw);
+$dynamicFontXXSmall: calc(12px + 0.2vw);
+
 
 
 $primaryTextColor: #F1E3F3;

@@ -1,0 +1,45 @@
+@import "../styles/variables.module.scss";
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        .formInput{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            
+            Button{
+                width: 40%;
+                align-self: center;
+                background-color: $secondaryBlue;
+                &:hover{
+                    background-color: #0676C6;
+                }
+            }
+            
+            h3 {
+                font-size: $dynamicFontSmall;
+                color: $secondaryWhite;
+                margin-bottom: 10px;
+            }
+
+            .inputField{
+                margin: 0;
+                font-family: inherit;
+                font-size: inherit;
+                line-height: inherit;
+                font-size: $dynamicFontSmall;
+                width: 100%;
+                align-items: center;
+
+
+            }
+        }
+    }
+}

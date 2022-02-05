@@ -9,7 +9,7 @@
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
-    "client": "cd client && npm start",
+    "client": "cd client && npx next dev",
     "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon server.js\" \"npm run client\""
   },
   "keywords": [],
@@ -24,7 +24,9 @@
     "express": "^4.17.1",
     "mongoose": "^5.7.9",
     "morgan": "^1.9.1",
+    "node-sass": "^7.0.1",
     "react-bootstrap": "^2.1.0",
-    "react-social-icons": "^5.7.0"
+    "react-social-icons": "^5.7.0",
+    "sass": "^1.49.0"
   }
 }
