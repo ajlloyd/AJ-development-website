@@ -4,8 +4,10 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const bodyParser = require("body-parser");
 
-//const cors = require('cors');
+const cors = require('cors');
 const path = require('path');
+
+const helmet = require('helmet');
 
 // Step 1 - PORT define
 const PORT = process.env.PORT || 5000; 
@@ -34,7 +36,7 @@ app.use(
   })
 );
 app.use(express.json());
-//app.use(cors({ credentials: true }));
+app.use(cors({ credentials: true }));
 
 // Step 3
 
@@ -59,6 +61,10 @@ app.listen(PORT, console.log(`Server is starting at ${PORT}`));
   next();
   });}
 
-
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
 
 
