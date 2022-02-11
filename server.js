@@ -71,4 +71,4 @@ app.listen(PORT, console.log(`Server is starting at ${PORT}`));
         } 
       }));
 
-
+app.use('/', express.static(path.join(__dirname, '/client/build')))
