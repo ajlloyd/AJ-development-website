@@ -61,10 +61,14 @@ app.listen(PORT, console.log(`Server is starting at ${PORT}`));
   next();
   });}
 
-app.use(
-  helmet({
-    contentSecurityPolicy: false,
-  })
-);
+  app.use(helmet({contentSecurityPolicy: {directives: {
+            defaultSrc: ["'self'", "https://ajlloyd-solutions.herokuapp.com/", "https://www.aaronjl.com"],
+            scriptSrc: ["'self'", "'unsafe-inline'", "https://ajlloyd-solutions.herokuapp.com/", "https://www.aaronjl.com"],          
+            styleSrc: ["'self'", 'https://fonts.googleapis.com', "'unsafe-inline'"],          
+            imgSrc: ["'self'", 'https://*.com'],          
+            fontSrc: ["'self'", 'https://*.com', 'data:']       
+          },    
+        } 
+      }));
 
 

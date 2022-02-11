@@ -17,12 +17,9 @@ const index = () => {
   return (
   <div>
     <Head>
-      {/*<meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self';font-src 'self'; img-src 'self' data: https:; style-src 'self' ; script-src 'self'" />*/}
       <title>Aaron Lloyd | Web Developer</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="shortcut icon" href="/images/favicon.ico" />
-      
-      {/*Content-Security-Policy: default-src 'none'; img-src 'self';*/}
+      <link rel="shortcut icon" href="/images/favicon.ico" /> 
     </Head>
     <div class="parallax-wrapper">
         <TopNavbar /> 
