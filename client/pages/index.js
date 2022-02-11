@@ -15,7 +15,6 @@ import Workflow from '../components/Workflow';
 
 const index = () => {
   return (
-  
   <div>
     <Head>
       <title>Aaron Lloyd | Web Developer</title>

@@ -43,18 +43,21 @@ if (process.env.NODE_ENV === 'production') {
 
 
 // HTTP request logger
-app.use(morgan('tiny'));
+/*app.use(morgan('tiny'));*/
 app.use("/api/services", servicePanel);
 
 console.log(PORT);
 app.listen(PORT, console.log(`Server is starting at ${PORT}`));
 
 
-app.use(function (req, res, next) {
-  res.setHeader('Content-Security-Policy', 'img-src "self"');
+/*{app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   res.setHeader('Access-Control-Allow-Credentials', true);
   next();
-  });
+  });}*/
+
+
+
+
