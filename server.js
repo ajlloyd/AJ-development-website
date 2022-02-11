@@ -34,7 +34,7 @@ app.use(
   })
 );
 app.use(express.json());
-app.use(cors({ credentials: true }));
+//app.use(cors({ credentials: true }));
 
 // Step 3
 
