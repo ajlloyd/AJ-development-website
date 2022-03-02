@@ -3,7 +3,7 @@ const mongoUsername = process.env.MONGO_USERNAME_ENV;
 const mongoPassword = process.env.MONGO_PASSWORD_ENV;
 
 module.exports = {
-  reactStrictMode: true,
+  //reactStrictMode: true,
   env:{
     MONGO_URI: `mongodb+srv://${mongoUsername}:${mongoPassword}@longsword.b2vea.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
   },
