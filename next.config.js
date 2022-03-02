@@ -27,7 +27,7 @@ module.exports = {
     return [
       {
         source: '/api/:path*',
-        destination: '/api/services/:path*',
+        destination: 'https://ajlloyd-solutions.herokuapp.com/:path*',
       },
     ]
   },
