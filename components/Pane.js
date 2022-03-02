@@ -10,12 +10,12 @@ if (production) {
   //var API_URL="/api/services/"
 
   const PORT = process.env.PORT
-  var API_URL=`http://localhost:${PORT}/api/services/`
+  var API_URL=`https://ajlloyd-solutions.herokuapp.com:${PORT}/api/services/`
 
 } else {
   // Local API
   const PORT = process.env.PORT || 3000
-  var API_URL=`http://localhost:${PORT}/api/services/`
+  var API_URL=`https://ajlloyd-solutions.herokuapp.com:${PORT}/api/services/`
 };
 
 
