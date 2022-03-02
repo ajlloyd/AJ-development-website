@@ -3,10 +3,7 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const MyServicesSchema = new Schema({
-  serviceid: {
-    type: String,
-    required: true
-  },
+
   img: {
     type: String,
     required: true
@@ -15,9 +12,5 @@ const MyServicesSchema = new Schema({
     type: String,
     required: true
   },
-  description: {
-    type: String,
-    required: true
-  }
 });
-module.exports = MyServices = mongoose.model("MyServices", MyServicesSchema);
+module.exports = mongoose.models.MyServices || mongoose.model("MyServices", MyServicesSchema);

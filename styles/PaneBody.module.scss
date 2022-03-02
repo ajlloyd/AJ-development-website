@@ -1,0 +1,71 @@
+@import "./variables.module.scss";
+
+
+
+
+.bodyWrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.bodyText{
+	display: flex;
+	flex-direction: column;
+	//height: calc(20px + 8vw);
+	margin: 0.5vw;
+	margin-bottom: 1.5vw;
+	
+	h3{
+		font-size: $dynamicFontXSmall
+	}
+
+}
+
+.iconContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 15vw;
+	//height: fit-content;
+	padding-left: 12%;
+	padding-right: 12%;
+
+	.singleIconPane{
+		display: flex;
+		flex-direction: row;
+		width: 20vw;
+
+		.icon{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content:center;
+    		align-items:center;
+			
+			.iconText{
+				font-size: $dynamicFontXXSmall;
+			}
+		}
+
+		.iconPaneText{
+			font-size: $dynamicFontXSmall;
+			margin: 5%;
+			width: 100px;
+			position: relative;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.iconContainer{
+		width:60%;
+
+		.icon{
+			background-color: aqua;
+		}
+	}
+}
+
+
