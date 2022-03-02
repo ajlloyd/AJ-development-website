@@ -10,7 +10,7 @@ if (production) {
   var API_URL="/api/services/"
 } else {
   // Local API
-  var API_URL="/api/services/"
+  var API_URL="https://ajlloyd-solutions.herokuapp.com/api/services/"
 };
 
 
