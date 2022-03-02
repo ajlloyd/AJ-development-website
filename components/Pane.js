@@ -9,7 +9,7 @@ if (production) {
   // Heroku API:
   //var API_URL="/api/services/"
 
-  const PORT = process.env.PORT || 3000
+  const PORT = process.env.PORT
   var API_URL=`http://localhost:${PORT}/api/services/`
 
 } else {
