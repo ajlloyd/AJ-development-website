@@ -10,7 +10,7 @@ if (production) {
   var API_URL="/api/services/"
 } else {
   // Local API
-  var API_URL="http://localhost:3000/api/services/"
+  var API_URL="/api/services/"
 };
 
 
