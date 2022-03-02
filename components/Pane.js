@@ -10,7 +10,8 @@ if (production) {
   var API_URL="/api/services/"
 } else {
   // Local API
-  var API_URL="http://localhost:3000/api/services/"
+  const PORT = process.env.PORT || 3000
+  var API_URL=`http://localhost:${PORT}/api/services/`
 };
 
 
