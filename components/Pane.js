@@ -7,7 +7,11 @@ import styles from "../styles/About.module.scss";
 const production = process.env.IS_PRODUCTION
 if (production) {
   // Heroku API:
-  var API_URL="/api/services/"
+  //var API_URL="/api/services/"
+
+  const PORT = process.env.PORT || 3000
+  var API_URL=`http://localhost:${PORT}/api/services/`
+
 } else {
   // Local API
   const PORT = process.env.PORT || 3000
