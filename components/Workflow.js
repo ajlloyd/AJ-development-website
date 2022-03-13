@@ -78,29 +78,42 @@ const Workflow = () => {
 
             <td>
               <div className={styles.stepDescription}>
-                <h1>Reach out and schedule a consultation call free of charge. </h1>
-                <h1>We will cover ideas, timeframes, and any questions you may have.</h1>
+                <ul>
+                  <li>Free consultation call</li>
+                  <li>Present your ideas</li>
+                  <li>Schedule timeframes</li>
+                  
+                </ul> 
+               </div>
+            </td>
+
+            <td>
+              <div className={styles.stepDescription}>
+                <ul>
+                  <li>Web design in Figma</li>
+                  <li>Discuss aims and target audience</li>
+                  <li>Bring any branding or logos</li>
+                </ul> 
               </div>
             </td>
 
             <td>
               <div className={styles.stepDescription}>
-                <h1>We will begin by producing wireframes / prototypes of your vision.</h1>
-                <h1>Bring logos, images, branding, or fonts and I will incorporate these too.  </h1>
+                <ul>
+                  <li>Development in React begins</li>
+                  <li>Regular status updates</li>
+                  <li>Fine-tune your ideas </li>
+                </ul> 
               </div>
             </td>
 
             <td>
               <div className={styles.stepDescription}>
-                <h1> I will then begin development of your site giving you regular updates. </h1>
-                <h1> There will be opportunities to tweak ideas along the way. </h1>
-              </div>
-            </td>
-
-            <td>
-              <div className={styles.stepDescription}>
-                <h1> Once you are happy it is time to release! </h1>
-                <h1> I can simply send over source files or assist you with deployment on Heroku. </h1>
+                <ul>
+                  <li>Recieve your project files</li>
+                  <li>Assitance with domains, hosting, and deployment if needed</li>
+                  
+                </ul> 
               </div>
             </td>
 

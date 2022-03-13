@@ -8,7 +8,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 
+{/*const production = process.env.IS_PRODUCTION
 
+if (production) {
+const SITE_KEY = }*/}
 
 //const serviceName = process.env.REACT_APP_SERVICE_NAME;
 //const templateName = process.env.REACT_APP_TEMPLATE_NAME;

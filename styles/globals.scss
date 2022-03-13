@@ -105,7 +105,7 @@ body {
 
         .parallax-group {
             position: relative;
-            height: 60vh;
+            height: 100%;
             transform-style: preserve-3d;
             color: $primaryTextColor;
             font-size: 2.5em;
@@ -142,19 +142,27 @@ body {
                     }
 
                     /* DEMO-SPECIFIC STYLES */
-                    .typewriter h1 {
-                        color: $primaryTextColor;
-                        font-family: $ubuntuMonoFont;
-                        font-size: 20px;
-                        font-weight: lighter;
-                        overflow: hidden; /* Ensures the content is not revealed until the animation */
-                        border-right: .55em solid $primaryTextColor; /* The typwriter cursor */
-                        white-space: nowrap; /* Keeps the content on a single line */
-                        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-                        letter-spacing: .15em; /* Adjust as needed */
-                        animation: 
-                        typing 4s steps(30, end),
-                        blink-caret 1s step-end infinite;
+                    .typewriter{
+
+                        display: flex;
+                        margin-top: 70%;
+                        
+
+                    
+                        h1 {
+                            color: $primaryTextColor;
+                            font-family: $ubuntuMonoFont;
+                            font-size: 20px;
+                            font-weight: lighter;
+                            overflow: hidden; /* Ensures the content is not revealed until the animation */
+                            border-right: .55em solid $primaryTextColor; /* The typwriter cursor */
+                            white-space: nowrap; /* Keeps the content on a single line */
+                            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+                            letter-spacing: .15em; /* Adjust as needed */
+                            animation: 
+                            typing 4s steps(30, end),
+                            blink-caret 1s step-end infinite;
+                        }
                     }
                     
                     /* The typing effect */

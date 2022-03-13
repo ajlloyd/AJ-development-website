@@ -38,7 +38,7 @@ const index = () => {
         <WhyMe />
         <Portfolio />
         <Workflow />
-        <Faqs/>
+        {/*<Faqs/>*/}
         <Contact/>
         <Footer />
 

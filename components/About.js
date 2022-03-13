@@ -27,8 +27,10 @@ const About = (props) => {
         <div class={styles.container}>
             <div className={styles.wrapper}>
                 <h1 className={styles.myIntro}>Hi, I am Aaron</h1>
+                
                 <div className={styles.picture}>
-                    <Image src="/profileImage.jpg" alt="My Profile Picture" width="200" height="200"/>
+                    <img src="/profileImage.jpg" alt="My Profile Picture" />
+                    {/*<Image src="/profileImage.jpg" alt="My Profile Picture" width="200" height="200"/>*/}
                 </div>
                 <h1 className={styles.myDescription}>UK based Developer specialising in Custom Coded Design</h1>
                 <h3 className={styles.myLang}>HTML // CSS // React // JavaScript // Python</h3>

@@ -96,10 +96,18 @@
                 }
 
                 .stepDescription{
+                    
                     h1{
                         font-size: $dynamicFontSmall;
                         margin-top: 1em;
                         margin-bottom: .5em;
+                    }
+                    ul{
+                        padding: 0;
+                        text-align: left;
+                    }
+                    li{
+                        color: #fff;
                     }
                 }
 
