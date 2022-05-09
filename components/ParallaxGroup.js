@@ -11,14 +11,14 @@ const ParallaxGroup = ({id, layer1, layer2, baseLayerImg, topLayerText, topLayer
                 <div className={"parallax-layer" + " " + layer1}>
                     {/*<img className="base-img" src={baseLayerImg}/>*/}
                     <div className='text-and-cursor'>
-                        <div class="typewriter">
+                        <div className="typewriter">
                             <h1>Your new project awaits.</h1>
                         </div>
                     </div>
                     
                 </div>
                 
-                <div class={"parallax-layer" + " " + layer2}>
+                <div className={"parallax-layer" + " " + layer2}>
                     <h1 className={"top-text" + "-" + PageType}>{topLayerText}</h1>
                     <h4 className={"top-text" + "-sub-" + PageType}>{topLayerSubText}</h4>
                 </div> 

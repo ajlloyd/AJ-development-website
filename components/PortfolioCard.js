@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../styles/Portfolio.module.scss"
-import Link from 'next/Link';
 import { Button } from 'react-bootstrap';
+import Link from "next/link"
 
 const PortfolioCard = (props) => {
   return (
@@ -20,6 +20,8 @@ const PortfolioCard = (props) => {
         <div className={styles.cardFooter}>
           <small className="text-muted">Created {props.date}</small>
         </div>
+
+        
 
     </div>
     

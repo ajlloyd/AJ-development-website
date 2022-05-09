@@ -24,7 +24,7 @@ const About = (props) => {
 
     return (
 
-        <div class={styles.container} id="aboutScroll">
+        <div className={styles.container} id="aboutScroll">
             <div className={styles.wrapper}>
                 <h1 className={styles.myIntro} >Hi, I am Aaron</h1>
                 

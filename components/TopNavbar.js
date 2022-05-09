@@ -31,7 +31,7 @@ const TopNavbar = () => {
         <div className={styles.container} id="navbar">
             <div className={styles.wrapper}>
                 <div className={styles.itemContainer}>
-                    <a className={styles.item}  href="#" onClick={()=>scrollToThisPlace("#homeScroll")}>Home</a>
+                    <a className={styles.item}  href="#" onClick={()=>document.querySelector(".parallax-wrapper").scrollTo({top: 0, behavior: 'smooth'})}>Home</a>
                     <a className={styles.item}  href="#" onClick={()=>scrollToThisPlace("#aboutScroll")}>About</a>
                     <a className={styles.item}  href="#" onClick={()=>scrollToThisPlace("#portfolioScroll")}>Portfolio</a>
                     <a className={styles.item}  href="#" onClick={()=>scrollToThisPlace("#contactScroll")}>Contact</a>

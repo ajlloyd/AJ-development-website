@@ -11,9 +11,9 @@ const Test = () => {
                        
                     <section id="terminal__bar">          
                     <div id="bar__buttons">            
-                        <button class="bar__button" id="bar__button--exit">&#10005;</button>            
-                        <button class="bar__button">&#9472;</button>                
-                        <button class="bar__button">&#9723;</button>          
+                        <button className="bar__button" id="bar__button--exit">&#10005;</button>            
+                        <button className="bar__button">&#9472;</button>                
+                        <button className="bar__button">&#9723;</button>          
                     </div>          
                     <p id="bar__user">ajlloyd@ubuntu: ~</p>        
                     </section>        
