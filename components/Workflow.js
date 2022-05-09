@@ -78,42 +78,34 @@ const Workflow = () => {
 
             <td>
               <div className={styles.stepDescription}>
-                <ul>
-                  <li>Free consultation call</li>
-                  <li>Present your ideas</li>
-                  <li>Schedule timeframes</li>
-                  
-                </ul> 
+                <h1>Free consultation call</h1>
+                <h1>Present your ideas</h1>
+                <h1>Ask any questions</h1>
                </div>
             </td>
 
             <td>
               <div className={styles.stepDescription}>
-                <ul>
-                  <li>Web design in Figma</li>
-                  <li>Discuss aims and target audience</li>
-                  <li>Bring any branding or logos</li>
-                </ul> 
+                <h1>Web design in Figma</h1>
+                <h1>Discuss aims and target audience</h1>
+                <h1>Bring any branding or logos</h1>
               </div>
             </td>
 
             <td>
               <div className={styles.stepDescription}>
-                <ul>
-                  <li>Development in React begins</li>
-                  <li>Regular status updates</li>
-                  <li>Fine-tune your ideas </li>
-                </ul> 
+                <h1>Development in React begins</h1>
+                <h1>Discuss aims and target audience</h1>
+                <h1>Fine-tune your ideas</h1>
               </div>
             </td>
 
             <td>
               <div className={styles.stepDescription}>
-                <ul>
-                  <li>Recieve your project files</li>
-                  <li>Assitance with domains, hosting, and deployment if needed</li>
-                  
-                </ul> 
+                <h1>Recieve your project files</h1>
+                <h1>Assitance with domains, hosting, and deployment if needed</h1>
+                
+                
               </div>
             </td>
 

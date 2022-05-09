@@ -59,6 +59,7 @@
                 //width: 15vw;
                 //height: 15vw;
                 text-align: center;
+                
                 //border: 1px solid orange;
                 
 
@@ -84,9 +85,7 @@
 
 
                 .stepHeading{
-
-                    align-self: start;;
-                
+                    align-self: flex-start;            
                     h1{
                         font-size: $dynamicFontMedium;
                         margin-top: 1em;
@@ -98,16 +97,11 @@
                 .stepDescription{
                     
                     h1{
+                        
                         font-size: $dynamicFontSmall;
-                        margin-top: 1em;
+                        //margin-top: 1em;
                         margin-bottom: .5em;
-                    }
-                    ul{
-                        padding: 0;
-                        text-align: left;
-                    }
-                    li{
-                        color: #fff;
+                        
                     }
                 }
 
