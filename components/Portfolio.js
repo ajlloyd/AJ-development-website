@@ -15,7 +15,7 @@ const Portfolio = () => {
               name="Aaron Lloyd Development - Personal Site" 
               date="Dec-2021" 
               img="/aaronLloydDevelopment.jpg"
-              link="http://localhost:3000"/>
+              link="https://www.aaronjl.com/"/>
           </td>
           <td>
             <PortfolioCard 
