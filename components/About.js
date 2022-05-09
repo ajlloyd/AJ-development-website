@@ -24,16 +24,16 @@ const About = (props) => {
 
     return (
 
-        <div class={styles.container}>
+        <div class={styles.container} id="aboutScroll">
             <div className={styles.wrapper}>
-                <h1 className={styles.myIntro}>Hi, I am Aaron</h1>
+                <h1 className={styles.myIntro} >Hi, I am Aaron</h1>
                 
                 <div className={styles.picture}>
                     <img src="/profileImage.jpg" alt="My Profile Picture" />
                     {/*<Image src="/profileImage.jpg" alt="My Profile Picture" width="200" height="200"/>*/}
                 </div>
                 <h1 className={styles.myDescription}>UK based Developer specialising in Custom Coded Design</h1>
-                <h3 className={styles.myLang}>HTML // CSS // React // JavaScript // Python</h3>
+                <h3 className={styles.myLang}>HTML // CSS // React // NextJS // JavaScript // Python</h3>
                 <div className={styles.socialWrapper}>
                     <SocialIcon className={styles.icon} bgColor="#9D9595" url="https://linkedin.com/in/aaron-lloyd-300a621b3/" />
                     <SocialIcon className={styles.icon} bgColor="#9D9595" url="https://github.com/ajlloyd" />
@@ -44,7 +44,7 @@ const About = (props) => {
 
             <div className={styles.paneWrapper}>
                 <div className={styles.paneColumn} id="Lcol1">
-                    <Pane uid="620ac941d336ebd609d5692b"/>
+                    <Pane image="./frontEnd.jpg" heading="Front-End Development"/>
                     <Card.Body>
                         <Card.Text>
                             <PaneBody textNumber="1"/>
@@ -53,7 +53,7 @@ const About = (props) => {
                 </div>
                 
                 <div className={styles.paneColumn} id="Lcol2">
-                    <Pane uid="620ac98cd336ebd609d5692d"/>
+                    <Pane image="/webApp.jpg" heading="Dynamic Web Apps"/>
                     <Card.Body>
                         <Card.Text>
                             <PaneBody textNumber="2"/>
@@ -62,7 +62,7 @@ const About = (props) => {
                 </div>
 
                 <div className={styles.paneColumn} id="Lcol3">
-                    <Pane uid="620ac9b6d336ebd609d5692f"/>
+                    <Pane image="/python.jpg" heading="Python Services"/>
                     <Card.Body>
                         <Card.Text>
                             <PaneBody textNumber="3"/>
@@ -70,35 +70,7 @@ const About = (props) => {
                     </Card.Body>
                 </div>
             </div>
-
-            {/*<div className='block'>
-
-                hello
-
-            </div>
-
-            <ParallaxGroup 
-          id="group1" 
-          layer1="base-layer" 
-          layer2="mid-layer"
-          topLayerText="Aaron Lloyd Development"
-          topLayerSubText="Expert Web Developer helping you bring your ideas to life"
-          PageType="main"/>
-
-            <div className='block'>
-
-                hello
-
-    </div>*/}
-
-
-
-        
-            
-
-
-            
-            
+ 
         </div>
         
     )

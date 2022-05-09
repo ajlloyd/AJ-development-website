@@ -1,10 +1,10 @@
-require('dotenv').config();
+  {/*require('dotenv').config();
 const mongoUsername = process.env.MONGO_USERNAME_ENV;
 const mongoPassword = process.env.MONGO_PASSWORD_ENV;
 
 module.exports = {
   //reactStrictMode: true,
-  env:{
+env:{
     MONGO_URI: `mongodb+srv://${mongoUsername}:${mongoPassword}@longsword.b2vea.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
   },
 
@@ -26,5 +26,5 @@ module.exports = {
  
   
 
-}
+}*/}
 

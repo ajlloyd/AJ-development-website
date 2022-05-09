@@ -4,31 +4,27 @@ import axios from "axios";
 import styles from "../styles/About.module.scss";
 
 
-const production = process.env.IS_PRODUCTION
+{/*const production = process.env.IS_PRODUCTION
 if (production) {
   // Heroku API:
   //var API_URL="/api/services/"
-
   const PORT = process.env.PORT
   var API_URL=`https://ajlloyd-solutions.herokuapp.com/api/services/`
-
 } else {
   // Local API
   const PORT = process.env.PORT || 3000
   var API_URL=`https://ajlloyd-solutions.herokuapp.com/api/services/`
-};
+};*/}
 
 
-const Pane = (props, {uid}) => {
+const Pane = (props, {image, heading}) => {
   
-     // 1. SET UP USESTATE:
+     {/*// 1. SET UP USESTATE:
      const [services, getServices] = useState("");
-     
      // 3. SET UP USEEFFECT (PREVENTS CONSTANT LOOP)
      useEffect(() => {
        fetchMyService();
      }, []);
-     
      // 4. FETCH FEATURE FUNCTION CALLED ABOVE (AXIOS GET, THEN, RESPONSE, CATCH ERRORS)
      const fetchMyService = () => {
        axios
@@ -53,20 +49,20 @@ const Pane = (props, {uid}) => {
            }
          }
        );
-     }
+     }*/}
     
 
     return(
 
-      <React.Fragment>
+      <>
         <div className={styles.pane}>
-          <img className={styles.paneImage} src={services.img} alt="vvv"/>
-          <h2 className={styles.paneText}>{services.subheading}</h2>
+          <img className={styles.paneImage} src={props.image} alt="vvv"/>
+          <h2 className={styles.paneText}>{props.heading}</h2>
           
         </div>
 
 
-      </React.Fragment>
+      </>
 
 
       

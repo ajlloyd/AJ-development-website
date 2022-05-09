@@ -19,72 +19,30 @@ const Workflow = () => {
       <div className={styles.stepsContainer}>
 
         <table>
+          
           <tr>
             
             <td>
-                <div className={styles.stepCircle} id={styles.circle1}>
-                  <h1><BsCameraVideoFill/></h1>
-                </div>
+              <div className={styles.stepCircle} id={styles.circle1}>
+                <h1><BsCameraVideoFill/></h1>
+              </div>
+              <div className={styles.stepHeading}>
+                <h1>Consultation</h1> 
+              </div>
+              <div className={styles.stepDescription}>
+                <h1>Free consultation call</h1>
+                <h1>Present your ideas</h1>
+                <h1>Ask any questions</h1>
+              </div>
             </td>
 
             <td>
               <div className={styles.stepCircle} id={styles.circle2}>
                 <h1><AiOutlineGateway/></h1>
               </div>
-            </td>
-
-            <td>
-              <div className={styles.stepCircle} id={styles.circle3}>
-                <h1><IoBuild/></h1>
-              </div>
-            </td>
-
-            <td>
-              <div className={styles.stepCircle} id={styles.circle4}>
-                <h1><GiPartyPopper/></h1>
-              </div>
-            </td>
-
-          </tr>
-
-          <tr>
-            <td>
-              <div className={styles.stepHeading}>
-                <h1>Consultation</h1> 
-              </div>
-            </td>
-
-            <td>
               <div className={styles.stepHeading}>
                 <h1>Prototyping</h1> 
               </div>
-            </td>
-
-            <td>
-              <div className={styles.stepHeading}>
-                <h1>Building</h1> 
-              </div>
-            </td>
-
-            <td>
-              <div className={styles.stepHeading}>
-                <h1>Release</h1> 
-              </div>
-            </td>
-          
-          </tr>
-
-          <tr>
-
-            <td>
-              <div className={styles.stepDescription}>
-                <h1>Free consultation call</h1>
-                <h1>Present your ideas</h1>
-                <h1>Ask any questions</h1>
-               </div>
-            </td>
-
-            <td>
               <div className={styles.stepDescription}>
                 <h1>Web design in Figma</h1>
                 <h1>Discuss aims and target audience</h1>
@@ -93,6 +51,12 @@ const Workflow = () => {
             </td>
 
             <td>
+              <div className={styles.stepCircle} id={styles.circle3}>
+                <h1><IoBuild/></h1>
+              </div>
+              <div className={styles.stepHeading}>
+                <h1>Building</h1> 
+              </div>
               <div className={styles.stepDescription}>
                 <h1>Development in React begins</h1>
                 <h1>Discuss aims and target audience</h1>
@@ -101,53 +65,86 @@ const Workflow = () => {
             </td>
 
             <td>
-              <div className={styles.stepDescription}>
-                <h1>Recieve your project files</h1>
-                <h1>Assitance with domains, hosting, and deployment if needed</h1>
-                
-                
+              <div className={styles.stepCircle} id={styles.circle4}>
+                <h1><GiPartyPopper/></h1>
               </div>
-            </td>
-
-          </tr>
-          
-          
-
-            
-              {/*<div className={styles.stepDescription}>
-                <h1>Reach out and schedule a consultation call free of charge. </h1>
-                <h1>We will cover your ideas, timeframes, and any questions you may have.</h1>
-              </div>
-              
-            </td>
-
-            <td>
-              <div className={styles.stepHeading}>
-                <h1>Prototyping</h1>
-              </div>
-              <div className={styles.stepDescription}>
-                <h1>We will begin by producing wireframes and prototypes of your vision.</h1>
-                <h1>Bring any logos, images, branding, or fonts and I will incorporate these too.  </h1>
-              </div>
-            </td>
-
-            <td>
-              <div className={styles.stepHeading}>
-                <h1>Building</h1> 
-              </div>
-              <div className={styles.stepDescription}>
-                <h1> I will then begin development of your site giving you regular updates. </h1>
-              </div>
-            </td>
-
-            <td>
               <div className={styles.stepHeading}>
                 <h1>Release</h1> 
               </div>
               <div className={styles.stepDescription}>
-                <h1> Once you are happy I will send you the project. </h1>
+                <h1>Recieve your project files</h1>
+                <h1>Assitance with domains, hosting, and deployment if needed</h1>
               </div>
-            </td>*/}
+            </td>
+
+          </tr>
+
+            {/*<tr>
+              <td>
+                <div className={styles.stepHeading}>
+                  <h1>Consultation</h1> 
+                </div>
+              </td>
+
+              <td>
+                <div className={styles.stepHeading}>
+                  <h1>Prototyping</h1> 
+                </div>
+              </td>
+
+              <td>
+                <div className={styles.stepHeading}>
+                  <h1>Building</h1> 
+                </div>
+              </td>
+
+              <td>
+                <div className={styles.stepHeading}>
+                  <h1>Release</h1> 
+                </div>
+              </td>
+            
+            </tr>
+
+            <tr>
+
+              <td>
+                <div className={styles.stepDescription}>
+                  <h1>Free consultation call</h1>
+                  <h1>Present your ideas</h1>
+                  <h1>Ask any questions</h1>
+                </div>
+              </td>
+
+              <td>
+                <div className={styles.stepDescription}>
+                  <h1>Web design in Figma</h1>
+                  <h1>Discuss aims and target audience</h1>
+                  <h1>Bring any branding or logos</h1>
+                </div>
+              </td>
+
+              <td>
+                <div className={styles.stepDescription}>
+                  <h1>Development in React begins</h1>
+                  <h1>Discuss aims and target audience</h1>
+                  <h1>Fine-tune your ideas</h1>
+                </div>
+              </td>
+
+              <td>
+                <div className={styles.stepDescription}>
+                  <h1>Recieve your project files</h1>
+                  <h1>Assitance with domains, hosting, and deployment if needed</h1>
+                </div>
+              </td>
+
+            </tr>*/}
+          
+          
+
+            
+
 
       
 

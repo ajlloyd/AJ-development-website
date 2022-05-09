@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../styles/Portfolio.module.scss"
-import Image from 'next/image';
+import Link from 'next/Link';
 import { Button } from 'react-bootstrap';
 
 const PortfolioCard = (props) => {
@@ -10,7 +10,7 @@ const PortfolioCard = (props) => {
     <div className={styles.cardPicture}>
 
       <img src={props.img}/>
-      <Button className={styles.button} variant="danger">Take Me There</Button>
+      <Link href={props.link}><Button className={styles.button} variant="danger">Take Me There</Button></Link>
         
     </div>
     <div className={styles.cardBody}>

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../styles/PaneBody.module.scss" 
-import {SiJavascript, SiReact, SiNextdotjs, SiHtml5, SiCss3, SiBootstrap, SiNodedotjs, SiMongodb, SiExpress, SiPostman, SiScikitlearn, SiPlotly, SiKeras, SiTensorflow, SiFlask, SiNumpy, SiPandas} from "react-icons/si"
+import {SiJavascript, SiReact, SiNextdotjs, SiHtml5, SiFirebase, SiCss3, SiBootstrap, SiNodedotjs, SiMongodb, SiExpress, SiPostman, SiScikitlearn, SiPlotly, SiKeras, SiTensorflow, SiFlask, SiNumpy, SiPandas} from "react-icons/si"
 
 
 const CustomAccordionBody = (props, {textNumber}) => {
@@ -75,9 +75,9 @@ const CustomAccordionBody = (props, {textNumber}) => {
                         </div>
                         <div className={styles.singleIconPane}>
                             <div className={styles.icon}>
-                                <h1 style={{color:"#ffffff"}}><SiExpress/></h1>
+                                <h1 style={{color:"yellow"}}><SiFirebase/></h1>
                             </div>
-                            <h3 className={styles.iconPaneText}>Express</h3>
+                            <h3 className={styles.iconPaneText}>Firebase</h3>
                         </div>
                         <div className={styles.singleIconPane}>
                             <div className={styles.icon}>

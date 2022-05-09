@@ -4,7 +4,7 @@ import EmailForm from './EmailForm'
 
 const Contact = () => {
     return (
-        <div className={styles.contactContainer}>
+        <div className={styles.contactContainer} id="contactScroll">
             <div className={styles.titleWrap}>
                 <h1 className={styles.titleText}>Contact Me</h1>
             </div>

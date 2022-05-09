@@ -145,14 +145,15 @@ body {
                     .typewriter{
 
                         display: flex;
-                        margin-top: 70%;
+                        margin-top: 100%;
+                        
                         
 
                     
                         h1 {
                             color: $primaryTextColor;
                             font-family: $ubuntuMonoFont;
-                            font-size: 20px;
+                            font-size: $dynamicFontSmall;
                             font-weight: lighter;
                             overflow: hidden; /* Ensures the content is not revealed until the animation */
                             border-right: .55em solid $primaryTextColor; /* The typwriter cursor */
@@ -194,6 +195,10 @@ body {
                     translate: 0px -75px;
                     position: relative;
                     width: 7em;
+                    @media screen and (max-width: 500px) {
+                        font-size: $dynamicFontXLarge;
+
+                    }
                 }
                 .top-text-sub-main {
                     color: $primaryTextColor;

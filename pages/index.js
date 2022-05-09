@@ -23,7 +23,7 @@ const index = () => {
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     </Head>
-    <div class="parallax-wrapper">
+    <div class="parallax-wrapper" id="homeScroll">
         <TopNavbar /> 
 
         <ParallaxGroup 
