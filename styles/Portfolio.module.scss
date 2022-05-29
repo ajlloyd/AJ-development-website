@@ -86,13 +86,18 @@
                 line-height: 50%;
                 height: fit-content;
                 
-                .cardTitle h2{
-                    color: white;
-                    font-size: $dynamicFontSmall;
-                    //text-align: left;
-                    &:hover{
-                        cursor: pointer;
-                        color: $primaryRose;
+                .cardTitle {
+                    .ghub{
+                        color: #797979;
+                    }
+                    h2{
+                        color: white;
+                        font-size: $dynamicFontSmall;
+                        //text-align: left;
+                        &:hover{
+                            cursor: pointer;
+                            color: $primaryRose;
+                        }
                     }
                 }
                 .cardFooter small{

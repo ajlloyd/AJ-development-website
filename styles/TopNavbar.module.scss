@@ -18,6 +18,7 @@
     transition-timing-function: ease-in;
     transition: 0.5s;
     background-color:#1f1f1f95;
+    
 
     // Navbar right (menu)
     .wrapper {
@@ -41,7 +42,7 @@
             // Navbar Item in Menu:
             .item {
                 font-size: $dynamicFontXSmall;
-                font-family: $ubuntuMonoFont;
+                font-family: $Montserrat;
                 text-align: center;
                 width: 16vw;
                 margin: 20px;

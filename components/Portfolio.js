@@ -12,17 +12,19 @@ const Portfolio = () => {
         <tr>
           <td>
             <PortfolioCard 
-              name="Aaron Lloyd Development - Personal Site" 
+              name="Personal Site - aaronjl.com" 
               date="Dec-2021" 
               img="/aaronLloydDevelopment.jpg"
-              link="https://www.aaronjl.com/"/>
+              link="https://www.aaronjl.com/"
+              githubLink="https://github.com/ajlloyd/AJLloyd-Solutions"/>
           </td>
           <td>
             <PortfolioCard 
-              name="AJ Financials - Stock Comparison Web App"
+              name="AJ Financials - Stock Comparison App"
               date="March-2022" 
               img="/ajfin.jpg"
-              link="https://github.com/ajlloyd/AJL-Financials"/>
+              link="https://ajl-financials-demo.vercel.app/"
+              githubLink="https://github.com/ajlloyd/AJL-Financials"/>
           </td>
         
           <td>
@@ -30,14 +32,16 @@ const Portfolio = () => {
               name="SparkFit - POC with FireBase " 
               date="May-2022" 
               img="/sparkfit.jpg"
-              link="https://sparkfit.vercel.app"/>
+              link="https://sparkfit.vercel.app"
+              githubLink="https://github.com/ajlloyd/blue-spark2"/>
           </td>
           <td>
             <PortfolioCard 
-              name="Coming Soon" 
-              date="Coming Soon" 
-              img="/placeholder.jpg"
-              link="https://github.com/ajlloyd"/>
+              name="Amber Lloyd Photography" 
+              date="May-2022" 
+              img="/amberPhoto.jpg"
+              link="https://amber-photography.vercel.app/"
+              githubLink="https://github.com/ajlloyd/amber-photography"/>
             </td>
         </tr>
       </table>
