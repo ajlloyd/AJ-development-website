@@ -7,7 +7,7 @@ const TopNavbar = () => {
 
     function scrollToThisPlace(element) {
         const position = document.querySelector(element)
-        position.scrollIntoView({behavior:"smooth"})
+        position.scrollIntoView()
     }
 
     const [showNav, setShowNav] = useState(true);
