@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import styles from "../styles/TopNavbar.module.scss"
 //import "../styles/App.module.scss"
 
@@ -7,34 +7,23 @@ const TopNavbar = () => {
 
     function scrollToThisPlace(element) {
         const position = document.querySelector(element)
-        position.scrollIntoView()
+        position.scrollIntoView({
+            top: 0, 
+            behavior: 'smooth'
+        })
     }
 
+    const testRef = useRef(null);
     const [showNav, setShowNav] = useState(true);
-    
-        {/*useEffect ( () => {
-        const para = document.querySelector(".parallax-wrapper");
-        const navbarControl = () => {
-            const scroll_no = para.scrollTop/para.clientHeight
-            if (scroll_no > 0.85) {
-                setShowNav(false)
-            } else {
-                setShowNav(true)
-            }
-        }
-        para.addEventListener("scroll", navbarControl)
-        console.log(showNav)
-        return () => para.removeEventListener('scroll', navbarControl)
-    }, [])*/}
 
     return (
         <div className={styles.container} id="navbar">
             <div className={styles.wrapper}>
                 <div className={styles.itemContainer}>
                     <a className={styles.item}  href="#" onClick={()=>document.querySelector(".parallax-wrapper").scrollTo({top: 0, behavior: 'smooth'})}>Home</a>
-                    <a className={styles.item}  href="#" onClick={()=>scrollToThisPlace("#aboutScroll")}>About</a>
-                    <a className={styles.item}  href="#" onClick={()=>scrollToThisPlace("#portfolioScroll")}>Portfolio</a>
-                    <a className={styles.item}  href="#" onClick={()=>scrollToThisPlace("#contactScroll")}>Contact</a>
+                    <a className={styles.item}  href="#" onClick={()=>setTimeout(function() {scrollToThisPlace("#aboutScroll")}, 1)}>About</a>
+                    <a className={styles.item}  href="#" onClick={()=>setTimeout(function() {scrollToThisPlace("#portfolioScroll")}, 1)}>Portfolio</a>
+                    <a className={styles.item}  href="#" onClick={()=>setTimeout(function() {scrollToThisPlace("#contactScroll")}, 1)}>Contact</a>
                 </div>
             </div>
         </div>

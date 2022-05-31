@@ -36,6 +36,8 @@
                 &:hover{
                     color: #F56476;
                     text-shadow: 0.2px 0px 0px #F56476, -0.2px 0px 0px #F56476;
+                    -webkit-transform:scale(1.1);
+                    transition: ease-in .2s;
                 }
             }
 
