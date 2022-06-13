@@ -23,7 +23,7 @@ const Portfolio = () => {
               name="AJ Financials - Stock Comparison App"
               date="March-2022" 
               img="/ajfin.jpg"
-              link="https://ajl-financials-demo.vercel.app/"
+              link="https://ajl-financials-lac.vercel.app/"
               githubLink="https://github.com/ajlloyd/AJL-Financials"/>
           </td>
         
